@@ -2,7 +2,13 @@
 
 <br/>
 
-The JFrog Platform provides standardized logs for all JFrog products and their services. All logs include a standard format and naming convention. [Documentation](https://www.jfrog.com/confluence/display/JFROG/Logging).
+The JFrog Platform provides standardized logs for all JFrog products and their services. 
+
+All logs include a standard format and naming convention. 
+
+[Documentation](https://www.jfrog.com/confluence/display/JFROG/Logging).
+
+<br/>
 
 #### Log Files Location and Naming
 

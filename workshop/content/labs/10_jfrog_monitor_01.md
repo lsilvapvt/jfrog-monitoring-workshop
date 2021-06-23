@@ -3,7 +3,7 @@
 
 <br/>
 
-Monitoring 
+Monitoring Alternatives
 
 - Dashboard  (Mission Control, Enterprise License required)
   Metrics and Trends
@@ -19,6 +19,6 @@ Monitoring
   System Log 
 
 
--   
+<br/>
 
 ---
