@@ -21,6 +21,8 @@ config:
       value: myuser
     - name: LAB_PASSWORD
       value: mypassword
+    - name: JFROG_PROTOCOL
+      value: https
     - name: JFROG_URL
       value: myurl
     - name: JFROG_ACCESSTOKEN

@@ -2,7 +2,9 @@
 
 <br/>
 
-### JFrog Platform Troubleshooting and Monitoring
+## JFrog Platform 
+
+### Troubleshooting and Monitoring
 
 <br/>
 

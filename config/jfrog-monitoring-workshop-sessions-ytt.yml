@@ -22,6 +22,8 @@ spec:
       value: #@ labenv.env_username
     - name: LAB_PASSWORD
       value: #@ labenv.env_password
+    - name: JFROG_PROTOCOL
+      value: #@ labenv.jfrog_protocol
     - name: JFROG_URL
       value: #@ labenv.jfrog_url
     - name: JFROG_ACCESSTOKEN

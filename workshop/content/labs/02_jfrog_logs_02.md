@@ -1,45 +1,55 @@
 
-### Managing Artifactory Repositories
+### Logs Inspection
 
-1. **Get all repositories** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetRepositories)):  
+  List all log files in the Artifactory server
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/repositories
+  ls var/log
   ```
 
-2. **Create a repository** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateRepository)):  
+  List all Archived log files in the Artifactory server
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL/artifactory/api/repositories/super-docker-local -H "Content-Type: application/json" -d @$HOME/files/superDockerRepo.json
+  ls var/log/archived
   ```
 
-3. Inspect the repository configuration file used above ([spec](https://www.jfrog.com/confluence/display/JFROG/Repository+Configuration+JSON)):
-  ```editor:open-file
-  file: ./files/superDockerRepo.json
-  ```
-
-4. **Retrieve a repository's information** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-RepositoryConfiguration)):
+  Tail the artifactory services log
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL/artifactory/api/repositories/super-docker-local
+  tail -f var/log/artifactory-service.log
   ```
 
-5. Change the repository configuration file to enable XRay indexing (set value to `true`) ([spec](https://www.jfrog.com/confluence/display/JFROG/Repository+Configuration+JSON)) and save the file:
-  ```editor:open-file
-  file: ./files/superDockerRepo.json
-  line: 6
+  Generate an event:    
+  ```execute-2
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/system/configuration
   ```
 
-6. **Update the repository** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-UpdateRepositoryConfiguration)):
+  Interrupt the log tail command
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST https://$JFROG_URL/artifactory/api/repositories/super-docker-local -H 'Content-Type: application/json' -d @$HOME/files/superDockerRepo.json
+  <ctrl+c>
   ```
 
-7. **Get a repository's scheduled replication status** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-ScheduledReplicationStatus)):
-  ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL/artifactory/api/replication/super-docker-local
-  ```
+### Log Verbosity
 
-8. **Delete the repository** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-DeleteRepository)):
+  [Documentation](https://www.jfrog.com/confluence/display/JFROG/Logging#Logging-ConfiguringLogVerbosity).
+
+  For **Java-based microservices**, `$JFROG_HOME/artifactory/var/etc/artifactory/logback.xml`:
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE https://$JFROG_URL/artifactory/api/repositories/super-docker-local
+  clear
+  cat var/etc/artifactory/logback.xml | grep logger
+  ```
+  No restart required after update.
+
+
+  For other microservices, `$JFROG_HOME/<product>/var/etc/system.yaml`:
+  ```execute
+  clear
+  cat var/etc/system.yaml
+  ```
+  System restart required after update.
+  Example:
+  ```
+  frontend:
+    logging:
+      application:
+        level: info
   ```
 
 <br/>
