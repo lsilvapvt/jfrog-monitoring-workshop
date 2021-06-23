@@ -63,28 +63,29 @@
 
   [Documentation](https://www.jfrog.com/confluence/display/JFROG/Logging#Logging-ConfiguringLogVerbosity).
 
-  For **Java-based microservices**, `$JFROG_HOME/artifactory/var/etc/artifactory/logback.xml`:
+- For **Java-based microservices**, `$JFROG_HOME/artifactory/var/etc/artifactory/logback.xml`
   ```execute
   clear
   cat var/etc/artifactory/logback.xml | grep logger
-  ```
+  ```  
   No restart required after update.
 
 
-  For other microservices, `$JFROG_HOME/<product>/var/etc/system.yaml`:
+- For other microservices, `$JFROG_HOME/<product>/var/etc/system.yaml`   
   ```execute
   clear
   cat var/etc/system.yaml
-  ```
+  ```  
   System restart required after update.
-
-  Example:
+  
+  Example:  
   ```
   frontend:
     logging:
       application:
         level: info
   ```
+
 
 <br/>
 

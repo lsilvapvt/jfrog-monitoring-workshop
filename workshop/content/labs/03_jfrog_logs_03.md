@@ -3,6 +3,8 @@
 
 ### Log Inspection - Tail 
 
+<br/>
+
 1. Tail log file
   ```execute
   clear

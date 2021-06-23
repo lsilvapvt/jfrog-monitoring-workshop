@@ -1,10 +1,11 @@
 [<img src="images/Jfrog_Green_RGB.png" alt="JFrog" style="width:120px;background-color:transparent;border:none;" />](https://jfrog.com)
 
-<br/>
 
 ## JFrog Platform 
 
-### Troubleshooting and Monitoring
+<br/>
+
+### Logging and Monitoring
 
 <br/>
 
@@ -14,9 +15,9 @@
 
 <br/>
 
-1. Logs
+1. Logging
 
-2. Metrics
+2. Monitoring
 
 <br/>
 

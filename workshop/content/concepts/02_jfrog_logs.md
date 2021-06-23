@@ -12,6 +12,8 @@ All logs include a standard format and naming convention.
 
 #### Log Files Location and Naming
 
+<br/>
+
 - Location: `$JFROG_HOME/<product>/var/log`
   ```
     JFROG_HOME
@@ -25,19 +27,27 @@ All logs include a standard format and naming convention.
                     └── <archived service logs>
   ```
 
+<br/>
+
 - Naming convention for for each log file: 
   - **Service log**: `<service-name>-service.log` - data on the service activity for each microservice   
-    Format: 
+    Format:   
     `Timestamp (UTC) [Service Type] [Level] [Trace Id] [Class and Line Number] [Thread] - Message`  
 
   - **Request log**: `<service-name>-request.log` - lists http requests (including gRPC) made to the service  
-    Format: 
+    Format:   
     `Timestamp | Trace ID | Remote Address | Username | Request method | Request URL | Return Status | Request Content Length | Response Content Length | Request Duration | Request User Agent`  
 
   - **Console log**: `console.log` - combined log file with server activity for all microservices
 
+<br/>
+
 
 - Archival of logs  
   Default rolling policy, compress log file and move it to `$JFROG_HOME/<product>/var/log/archived`  
+
+<br/>
+
+
 
 ---

@@ -4,7 +4,7 @@ modules:
     activate:
     - index
     - concepts/02_jfrog_logs
-    - labs/01_jfrog_logs_01
+    - labs/01_jfrog_access_01
     - labs/02_jfrog_logs_02
     - labs/03_jfrog_logs_03
     - labs/04_jfrog_logs_04
