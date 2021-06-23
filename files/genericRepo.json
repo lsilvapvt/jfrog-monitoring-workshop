@@ -1,0 +1,7 @@
+{
+    "key": "dev-generic-local",
+    "rclass" : "local",
+    "packageType": "generic",
+    "description": "The local repository for generic files",
+    "xrayIndex" : "false"
+}

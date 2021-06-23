@@ -21,6 +21,7 @@ Prepare gcloud account:
 
 SSH into Artifactory server instance:
   ```execute
+  clear
   kubectl exec artifactory-0 -it -n artifactory -c artifactory -- /bin/bash
   ```
 
