@@ -1,0 +1,7 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: WorkshopEnvironment
+metadata:
+  name: jfrog-monitoring-env
+spec:
+  workshop:
+    name: jfrog-monitoring-fundamentals

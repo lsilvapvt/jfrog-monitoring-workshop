@@ -1,0 +1,10 @@
+name: JFrog Troubleshooting and Monitoring Fundamentals
+
+modules:
+    activate:
+    - index
+    - concepts/02_jfrog_logs
+    - labs/01_jfrog_logs_01
+    - labs/02_jfrog_logs_02
+    - concepts/03_jfrog_metrics
+    - finish

@@ -1,0 +1,28 @@
+#! Example: ytt -f jfrog-monitoring-workshop-ytt-sessions.yml -f credentials.yml
+
+#@ load("@ytt:data", "data")
+
+#@ for/end labenv in data.values.credentials:
+---    
+apiVersion: training.eduk8s.io/v1alpha1
+kind: WorkshopSession
+metadata:
+  name: #@ "jfrog-monitoring-" + labenv.env_id + "-" + labenv.env_instance
+spec:
+  environment:
+    name: jfrog-monitoring-env
+  session:
+    username: #@ labenv.env_username
+    password: #@ labenv.env_password
+    id: #@ labenv.env_id + "-" + labenv.env_instance
+    env:
+    - name: LAB_SLOT_ID
+      value: #@ labenv.env_id
+    - name: LAB_USERNAME
+      value: #@ labenv.env_username
+    - name: LAB_PASSWORD
+      value: #@ labenv.env_password
+    - name: JFROG_URL
+      value: #@ labenv.jfrog_url
+    - name: JFROG_ACCESSTOKEN
+      value: #@ labenv.jfrog_accesstoken

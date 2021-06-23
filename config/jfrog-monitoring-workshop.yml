@@ -1,0 +1,35 @@
+apiVersion: training.eduk8s.io/v1alpha2
+kind: Workshop
+metadata:
+  name: jfrog-monitoring-fundamentals
+spec:
+  title: JFrog Platform Monitoring Fundamentals
+  description: Fundamentals of JFrog Platform monitoring Capabilities
+  url: https://github.com/lsilvapvt/jfrog-monitoring-workshop
+  vendor: edu.workshops.zone
+  authors:
+  - Luciano Silva
+  difficulty: intermediate
+  duration: 1h
+  tags:
+  - jfrog
+  - artifactory
+  content:
+    image: silval/jfrog-automation-workshop:latest
+    files: github.com/lsilvapvt/jfrog-monitoring-workshop
+  session:
+    namespaces:
+      budget: medium
+    applications:
+      terminal:
+        enabled: true
+        layout: split
+      console:
+        enabled: false
+      editor:
+        enabled: true
+      slides:
+        enabled: true       
+    # dashboards:
+    #     - name: Platform
+    #       url: "https://www.google.com"                   

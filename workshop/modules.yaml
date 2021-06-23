@@ -1,0 +1,27 @@
+modules:
+    index:
+        name: Workshop Overview
+        exit_sign: Start Workshop
+    concepts/02_jfrog_logs:
+        name: JFrog Platform Logs
+    labs/01_jfrog_logs_01:
+        name: Logs
+    labs/02_jfrog_logs_02:
+        name: Logs
+    concepts/04_jfrog_metrics:
+        name: JFrog Metrics   
+    finish:
+        name: Workshop Summary
+        exit_sign: Finish Workshop
+config:
+    vars:
+    - name: LAB_SLOT_ID
+      value: lucianos
+    - name: LAB_USERNAME
+      value: myuser
+    - name: LAB_PASSWORD
+      value: mypassword
+    - name: JFROG_URL
+      value: myurl
+    - name: JFROG_ACCESSTOKEN
+      value: mytoken
