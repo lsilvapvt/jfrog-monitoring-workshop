@@ -3,11 +3,12 @@ name: JFrog Troubleshooting and Monitoring Fundamentals
 modules:
     activate:
     - index
-    - concepts/02_jfrog_logs
     - labs/01_jfrog_access_01
+    - concepts/02_jfrog_logs
     - labs/02_jfrog_logs_02
     - labs/03_jfrog_logs_03
     - labs/04_jfrog_logs_04
     - labs/10_jfrog_monitor_01
     - concepts/03_jfrog_metrics
+    - concepts/04_jfrog_tracing
     - finish
