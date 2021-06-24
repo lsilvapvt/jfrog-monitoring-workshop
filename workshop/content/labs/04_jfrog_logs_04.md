@@ -1,11 +1,7 @@
 
 <br>
 
-### Log Inspection - Alternatives
-
-<br/>
-
-#### 1. Monitoring - System Logs UI page   
+#### 1. User Interface - System Logs page
     
 <br/>
 

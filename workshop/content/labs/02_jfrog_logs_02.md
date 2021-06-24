@@ -1,10 +1,6 @@
 
-<br>
-
-### Log Inspection
 
 <br/>
-
 
   List all log files in the Artifactory server
   ```execute
@@ -13,6 +9,9 @@
 
 <br/>
 
+Categories of Logs
+
+<br/>
 
   - **artifactory.log** - All events inside artifactory and replication/backups, metadata calculation are captured here. UI path Admin→ System Logs
   - **traffic.log** - Not enabled by default. Only uploads and download to/from artifactory is captured here. GET/PUT/POST to artifactory are captured here. It is not visible via UI 

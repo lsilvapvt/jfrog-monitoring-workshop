@@ -1,4 +1,10 @@
-### Logging
+<br/>
+
+Logs record application events and help uncover unpredictable and emergent behaviors exhibited by components of microservices architecture.
+
+
+**Personas**: system administrators, auditors and developers
+
 
 <br/>
 
@@ -29,7 +35,7 @@ All logs include a standard format and naming convention.
 
 <br/>
 
-- Naming convention for for each log file: 
+- Naming convention for each log file: 
   - **Service log**: `<service-name>-service.log` - data on the service activity for each microservice   
     Format:   
     `Timestamp (UTC) [Service Type] [Level] [Trace Id] [Class and Line Number] [Thread] - Message`  

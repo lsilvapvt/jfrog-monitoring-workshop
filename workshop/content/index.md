@@ -5,7 +5,7 @@
 
 <br/>
 
-### Logging and Monitoring
+### Observability
 
 <br/>
 
@@ -15,9 +15,15 @@
 
 <br/>
 
-1. Logging
+The Pillars of Observability [*](https://iamondemand.com/blog/the-3-pillars-of-system-observability-logs-metrics-and-tracing/)
 
-2. Monitoring
+<br/>
+
+1. Logs
+
+2. Metrics
+
+3. Tracing
 
 <br/>
 
