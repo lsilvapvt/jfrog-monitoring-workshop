@@ -13,9 +13,7 @@ A trace is a way of representing a series of related events across a distributed
 
 JFrog enables this via `trace ID`.
 
-<br/>
-
-<img src="images/jpd_trace01.png" alt="JPD TraceID" style="background-color:transparent;border:none;" />
+<img src="../images/jpd_trace01.png" alt="JPD TraceID" style="background-color:transparent;border:none;" />
 
 <br/>
 
@@ -44,6 +42,21 @@ JFrog enables this via `trace ID`.
   Example:
   `https://<jfrog-url>/artifactory/dev-generic-local/dev-training/myfile.jar?trace`
 
+<br/>  
+
+  Upload a file:    
+  ```execute-2
+    curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT "$JFROG_PROTOCOL://$JFROG_URL/artifactory/example-repo-local/dev-training/find-largest-files.aql" -T files/find-largest-files.aql
+  ```
+
+  Access file with `?trace` parameter:    
+  ```execute-2
+    curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET "$JFROG_PROTOCOL://$JFROG_URL/artifactory/example-repo-local/dev-training/find-largest-files.aql?trace"
+  ```
+
+<br/>
+
+  Example of output:
   ```
     Request ID: 1aa7ef93
     Repo Path ID: dev-generic-local:dev-training/jfrog_automation_narasimha.mp4
@@ -80,15 +93,7 @@ JFrog enables this via `trace ID`.
     2021-06-24T23:19:44.951Z Request succeeded  
   ```
 
-  Upload a file:    
-  ```execute
-    curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT "$JFROG_PROTOCOL://$JFROG_URL/artifactory/example-repo-local/dev-training/find-largest-files.aql" -T files/find-largest-files.aql
-  ```
-
-  Access file with `?trace` parameter:    
-  ```execute
-    curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET "$JFROG_PROTOCOL://$JFROG_URL/artifactory/example-repo-local/dev-training/find-largest-files.aql?trace"
-  ```
+<br/>  
 
 ---
 

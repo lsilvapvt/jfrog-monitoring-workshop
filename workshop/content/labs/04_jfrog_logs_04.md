@@ -72,4 +72,22 @@
 
 <br/>
 
+#### 3. Log Analytics and Integrations 
+
+More information on this topic later in this workshop.
+
+<br/>
+
+#### 4. Sending logs to Syslog 
+
+[Documentation](https://www.jfrog.com/confluence/display/JFROG/Logging#Logging-SendingLogstoSyslog)
+
+<br/>
+
+#### 5. Cloud SaaS  
+
+Log Shipping
+
+<br/>
+
 ---

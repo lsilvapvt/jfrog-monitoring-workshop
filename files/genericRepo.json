@@ -1,7 +1,7 @@
 {
-    "key": "dev-generic-local",
+    "key": "labs-generic-local",
     "rclass" : "local",
     "packageType": "generic",
-    "description": "The local repository for generic files",
+    "description": "The local labs repository for generic files",
     "xrayIndex" : "false"
 }

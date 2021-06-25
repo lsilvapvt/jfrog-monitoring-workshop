@@ -8,7 +8,10 @@ modules:
     - labs/02_jfrog_logs_02
     - labs/03_jfrog_logs_03
     - labs/04_jfrog_logs_04
-    - labs/10_jfrog_monitor_01
     - concepts/03_jfrog_metrics
     - concepts/04_jfrog_tracing
+    - labs/10_jfrog_monitor_01
+    - labs/10_jfrog_monitor_02
+    - labs/20_jfrog_insights_01
+    - labs/30_jfrog_analytics_01
     - finish

@@ -1,6 +1,6 @@
 modules:
     index:
-        name: Overview
+        name: Workshop Overview
         exit_sign: Start
     labs/01_jfrog_access_01:
         name: Kubernetes Cluster Access
@@ -14,10 +14,16 @@ modules:
         name: Lab - Logs Inspection Alternatives
     concepts/03_jfrog_metrics:
         name: JFrog Platform Metrics
-    labs/10_jfrog_monitor_01:
-        name: Monitoring
     concepts/04_jfrog_tracing:
         name: JFrog Platform Tracing
+    labs/10_jfrog_monitor_01:
+        name: Log Analytics & Monitoring
+    labs/10_jfrog_monitor_02:
+        name: Monitoring - Admin UI
+    labs/20_jfrog_insights_01:
+        name: JFrog Insights
+    labs/30_jfrog_analytics_01:
+        name: Log Analytics with Integrations
     finish:
         name: Workshop Summary
         exit_sign: Finish

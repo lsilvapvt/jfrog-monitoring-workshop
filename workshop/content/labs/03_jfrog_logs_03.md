@@ -11,7 +11,7 @@
 
 2. Create a generic repository 
   ```execute-2
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT "$JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories/dev-generic-local" -H 'Content-Type: application/json' -d @files/genericRepo.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT "$JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories/labs-generic-local" -H 'Content-Type: application/json' -d @files/genericRepo.json
   ```
 
 
@@ -28,13 +28,13 @@
 
 <!-- 3. Upload a file to the new repository
   ```execute-2
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT "$JFROG_PROTOCOL://$JFROG_URL/artifactory/dev-generic-local/aql/" -d @files/find-largest-files.aql
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT "$JFROG_PROTOCOL://$JFROG_URL/artifactory/labs-generic-local/aql/" -d @files/find-largest-files.aql
   ``` -->
 
 
 5. Delete the generic repository 
   ```execute-2
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE "$JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories/dev-generic-local"
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE "$JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories/labs-generic-local"
   ```
 
 <br>

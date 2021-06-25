@@ -9,7 +9,7 @@ Metrics are a measured value comprised of a set of attributes (e.g., name, value
 
 <br/>
 
-#### OpenMetrics
+#### 1. OpenMetrics
 
 - [Documentation](https://www.jfrog.com/confluence/display/JFROG/Open+Metrics)  
   
@@ -24,52 +24,35 @@ Metrics are a measured value comprised of a set of attributes (e.g., name, value
   - Scanned Artifact by Package Type
   - Scanned Components
   
-  How is it delivered
-  - Pre-built dashboards within Splunk and Datadog  
-  - Integrations available as tiles within Splunkbase and Datadog integrations marketplaces
+  It is delivered as pre-built dashboards within Splunk and Datadog, with integrations available as tiles within the corresponding marketplaces. More on this topic later in this workshop.
 
+- [Get OpenMetrics for Artifactory](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GettheOpenMetricsforArtifactory)
 
-- [Enable metrics](https://www.jfrog.com/confluence/display/JFROG/Dashboard?utm_source=platform&utm_content=wiki#Dashboard-EnablingTrends)
-
-- [REST API - Get OpenMetrics for Artifactory](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GettheOpenMetricsforArtifactory)
-
-- [OpenMetrics format link](https://prometheus.io/docs/instrumenting/exposition_formats/#text-based-format)
-
-<br/> 
-
-Get OpenMetrics from Artifactory
   ```execute-2
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET "$JFROG_PROTOCOL://$JFROG_URL/artifactory/api/v1/metrics"
   ```
 
+- [Enable metrics](https://www.jfrog.com/confluence/display/JFROG/Dashboard?utm_source=platform&utm_content=wiki#Dashboard-EnablingTrends)
 
-REST API - Ping
+- [OpenMetrics format](https://prometheus.io/docs/instrumenting/exposition_formats/#text-based-format)
+
+<br/> 
+
+
+#### 2. REST API - Ping
+
   ```execute-2
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET "$JFROG_PROTOCOL://$JFROG_URL/artifactory/api/system/ping"
   ```
+
   Provides a complete system health check.  
-  Returns a HTTP 200 code with “OK” if Artifactory is 100%. Otherwise returns a 5xx with stated reason. Doesn’t only check to see if socket is open, but checks to see if full Artifactory service including DB and filestore is functional. 
+
+  Returns a HTTP 200 code with “OK” if Artifactory is 100%. 
+  
+  Otherwise returns a 5xx with stated reason. Doesn’t only check to see if socket is open, but checks to see if full Artifactory service including DB and filestore is functional. 
 
 
 <br/> 
-
-
-#### JFrog Insights 
-
-Tool for quick indicatives about the overall system status
-
-<br/> 
-
-#### FluentD 
-
-- [FluentD for DataDog - Documentation](https://www.jfrog.com/confluence/display/JFROG/Datadog#Datadog-SettingUpFluentdforDatadog)
-
-- [Log Analytics DataDog - GitHub](https://github.com/jfrog/log-analytics-datadog)
-
-- [JFrog Platform Performance with Datadog Analytics - Blog](https://jfrog.com/blog/track-jfrog-platform-performance-with-datadog-analytics/)
-
-
-<br/>
 
 
 ---
