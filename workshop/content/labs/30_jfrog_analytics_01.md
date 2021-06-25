@@ -11,7 +11,7 @@ Alerting and notification features, management by exception!
 
 <br/>
 
-**Integrations**
+##### Integrations
 
 - [Splunk](https://www.jfrog.com/confluence/display/JFROG/Splunk)
 - [Sumo Logic](https://www.jfrog.com/confluence/display/JFROG/Sumo+Logic) 
@@ -25,6 +25,8 @@ Alerting and notification features, management by exception!
 <br/> 
 
 ##### FluentD - Unified Logging Layer
+
+<br/>
 
 [FluentD](https://www.fluentd.org/architecture) covers log input and field extraction for all products in the JFrog Platform and structures them as JSON. 
 

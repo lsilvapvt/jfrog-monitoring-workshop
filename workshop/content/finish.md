@@ -1,6 +1,6 @@
 
-### For more information
+### Thanks!
 
-* [JFrog documentation](https://jfrog.com)
+#### For more information
 
-Thanks!
+- [JFrog documentation](https://jfrog.com)

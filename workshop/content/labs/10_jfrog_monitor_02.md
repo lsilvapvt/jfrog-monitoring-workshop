@@ -8,6 +8,14 @@
 
 <br/>
 
+Launch the JFrog Monitoring-Storage Summary page
+```dashboard:open-url
+name: Platform
+url: {{ JFROG_PROTOCOL }}://{{ JFROG_URL }}/ui/admin/monitoring/storage_summary
+```
+
+<br/>
+
 - [Storage](https://www.jfrog.com/confluence/display/JFROG/Monitoring+Storage)  
   <img src="https://www.jfrog.com/confluence/download/attachments/89300944/file_storage.png?version=1&modificationDate=1563370607000&api=v2" alt="Storage" style="background-color:transparent;border:none;" />
 

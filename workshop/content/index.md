@@ -15,7 +15,7 @@
 
 <br/>
 
-The Pillars of System Observability [*](https://iamondemand.com/blog/the-3-pillars-of-system-observability-logs-metrics-and-tracing/)
+The Three Pillars of System Observability [*](https://iamondemand.com/blog/the-3-pillars-of-system-observability-logs-metrics-and-tracing/)
 
 <br/>
 
@@ -23,7 +23,7 @@ The Pillars of System Observability [*](https://iamondemand.com/blog/the-3-pilla
 
 2. Metrics
 
-3. Tracing
+3. Traces
 
 <br/>
 
