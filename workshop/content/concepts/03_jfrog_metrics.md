@@ -13,7 +13,7 @@ Metrics are a measured value comprised of a set of attributes (e.g., name, value
 
 - [Documentation](https://www.jfrog.com/confluence/display/JFROG/Open+Metrics)  
   
-  Open Metrics is supported by Artifactory 7.7+. Provides system telemetry and operational metrics on the Artifactory and Xray.
+  Open Metrics is supported by Artifactory 7.7+. Provides system telemetry and operational metrics on Artifactory and Xray.
 
   Samples of Metrics  
   - System Consumption for Artifactory and Xray - CPU, Memory, Disk  

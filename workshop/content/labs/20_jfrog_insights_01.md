@@ -9,11 +9,11 @@
 
 <br/>
 
-Integrated tool for basic insights about the overall system status.
+Integrated dashboard, delivered as part of Mission Control (Enterprise License required) for basic insights about the overall system status.
 
-Advantages: integrated and micro-services aware. Independent on 3rd party administrators.
-
-Delivered as part of Mission Control, Enterprise License required.
+Advantages:  
+  - Integrated and micro-services aware
+  - Independent on 3rd party administrators
 
 <br/>
 

@@ -95,5 +95,13 @@ JFrog enables this via `trace ID`.
 
 <br/>  
 
+
+  Delete file:    
+  ```execute-2
+    curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE "$JFROG_PROTOCOL://$JFROG_URL/artifactory/example-repo-local/dev-training/find-largest-files.aql"
+  ```
+
+<br/>  
+
 ---
 
