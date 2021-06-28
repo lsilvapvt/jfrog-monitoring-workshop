@@ -72,19 +72,34 @@
 
 <br/>
 
-#### 3. Log Analytics and Integrations 
+#### 3. Support Bundles
+
+For Pro X, Enterprise and Enterprise + on-prem customers, Artifactory lets you generate a **logs support bundle** to ship to JFrog Support and expedite handling of an issue.
+
+[Documentation](https://www.jfrog.com/confluence/display/JFROG/Support+Zone).
+
+To create a new support bundle, in the **Administration** module, go to **Support Zone**, and click **Create new support bundle**.
+
+  ```dashboard:open-url
+  name: Platform
+  url: {{ JFROG_PROTOCOL }}://{{ JFROG_URL }}/ui/admin/support-zone
+  ```
+
+<br/>
+
+#### 4. Log Analytics and Integrations 
 
 More information on this topic later in this workshop.
 
 <br/>
 
-#### 4. Sending logs to Syslog 
+#### 5. Sending logs to Syslog 
 
 [Documentation](https://www.jfrog.com/confluence/display/JFROG/Logging#Logging-SendingLogstoSyslog)
 
 <br/>
 
-#### 5. Cloud SaaS  
+#### 6. Cloud SaaS  
 
 Log Shipping
 
